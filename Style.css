@@ -8,10 +8,13 @@ body{
     width:100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
-
+h1{
+    text-decoration: underline;
+}
 .container{
     width: 30%;
     height: 50%;
@@ -47,8 +50,8 @@ input{
 button{
     width:100%;
     border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
+    padding: 12px;
+   
 }
 
 .result-container{
@@ -69,17 +72,29 @@ button{
     text-align: center;   
 }
 
+p{
+    color: goldenrod;
+    font-size: 15px;
+    margin: 5px;
+}
+
 @media only screen and (max-width: 1150px) {
      
     .container{
         width: 40%;
     } 
+    .result-container div{
+        padding: 20px;
+    }
 }
 
 @media only screen and (max-width: 850px) {
      
     .container{
         width: 50%;
+    }
+    .result-container div{
+        padding: 20px;
     }
 }
 
@@ -109,7 +124,7 @@ button{
         width: 80%;
     }
     .result-container div{
-        padding: 20px;
+        padding: 18px;
     }
 }
 
@@ -120,7 +135,7 @@ button{
     }
 
     .result-container div{
-        padding: 20px;
+        padding: 18px;
     }
 }
 
@@ -128,6 +143,9 @@ button{
      
     .container{
         width: 90%;
+    }
+    .result-container div{
+        padding: 13px;
     }
 
 }
@@ -139,7 +157,7 @@ button{
     }
 
     .result-container div{
-        padding: 15px;
+        padding: 13px;
     }
 }
 

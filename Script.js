@@ -4,9 +4,9 @@ let yearOld, monthOld, dayOld;
 let birthDay, birthMonth, birthYear;
 let months =[31,28,31,30,31,30,31,31,30,30,30,31];
 
-let year = document.querySelector('.Year-container');
-let month = document.querySelector('.month-container');
-let day = document.querySelector('.day-container');
+let year = document.querySelector('.Year');
+let month = document.querySelector('.month');
+let day = document.querySelector('.day');
 
 btn_calc.addEventListener("click",function(e) {
             
