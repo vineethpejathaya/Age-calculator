@@ -36,38 +36,43 @@ btn_calc.addEventListener("click",function(e) {
 
                         alert("Not Born yet");
                     }
-                    
-                    
-                    yearOld = currentYear - birthYear;
-
-                    if( currentMonth >= birthMonth)
-                    {
-                        monthOld = currentMonth - birthMonth;
-                    }
                     else
                     {
-                        yearOld--;
-                        monthOld = 12 - (birthMonth - currentMonth) ; 
-                    }
+                        yearOld = currentYear - birthYear;
 
-                    if(currentDay >= birthDay)
-                    {
-                        dayOld = currentDay - birthDay;
+                        if( currentMonth >= birthMonth)
+                        {
+                            monthOld = currentMonth - birthMonth;
+                        }
+                        else
+                        {
+                            yearOld--;
+                            monthOld = 12 - (birthMonth - currentMonth) ; 
+                        }
+    
+                        if(currentDay >= birthDay)
+                        {
+                            dayOld = currentDay - birthDay;
+                        }
+                        else
+                        {
+                            monthOld--;
+                            dayOld = (months[currentMonth-1] - birthDay ) + currentDay ;
+                        }
+                        
+                        year.innerHTML = yearOld;
+                        month.innerHTML = monthOld;
+                        day.innerHTML = dayOld;
                     }
-                    else
-                    {
-                        monthOld--;
-                        dayOld = (months[currentMonth-1] - birthDay ) + currentDay ;
-                    }
-                    
-                    year.innerHTML = yearOld;
-                    month.innerHTML = monthOld;
-                    day.innerHTML = dayOld;
+                
             }
             else
             {
-                    document.querySelector('small').className = "smart";
+                        document.querySelector('small').className = "smart";
             }
+                    
+                    
+                    
 })
 
 
