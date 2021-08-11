@@ -140,7 +140,7 @@ small{
 @media only screen and (max-width: 460px) {
      
     .container{
-        width: 80%;
+        width: 85%;
     }
     .result-container div{
         padding: 18px;
