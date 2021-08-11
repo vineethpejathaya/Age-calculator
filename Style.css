@@ -35,12 +35,14 @@ h1{
 }
 .input{
     width:60%;
+    position: relative;
 }
 input{
     width:100%;
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
+    
 }
 
 .button-container{
@@ -76,6 +78,23 @@ p{
     color: goldenrod;
     font-size: 15px;
     margin: 5px;
+}
+
+small{
+    padding:10px;
+    color: white;
+    font-weight: 800;
+    position: absolute;
+    top:50px;
+    font-size: 17px;
+    margin-left: 10px;
+}
+.small{
+    visibility: hidden;
+}
+.smart{
+    
+    visibility: visible;
 }
 
 @media only screen and (max-width: 1150px) {
